@@ -1,0 +1,14 @@
+flowchart LR
+    A[Intake] --> B[Risk Classification]
+    B --> C[Data Readiness]
+    C --> D[Development]
+    D --> E[Validation]
+    E --> F[Approval]
+    F --> G[Deployment]
+    G --> H[Monitoring]
+    H --> I{Drift or Incident?}
+    I -- No --> H
+    I -- Yes --> J[Remediation]
+    J --> K[Retraining or Rollback]
+    K --> E
+    H --> L[Retirement]

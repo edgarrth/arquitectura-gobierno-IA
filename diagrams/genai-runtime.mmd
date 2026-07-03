@@ -1,0 +1,14 @@
+flowchart LR
+    U[User or App] --> GW[AI Gateway]
+    GW --> IN[Input Guardrails]
+    IN --> P[Prompt Orchestrator]
+    P --> R[RAG Retriever]
+    R --> V[Vector DB]
+    V --> KB[Governed Knowledge Base]
+    P --> LLM[LLM Provider or Internal Model]
+    LLM --> OUT[Output Guardrails]
+    OUT --> RESP[Response with Sources]
+    RESP --> U
+    GW --> LOG[Audit Logs]
+    OUT --> MON[GenAI Monitoring]
+    MON --> SIEM[SIEM]

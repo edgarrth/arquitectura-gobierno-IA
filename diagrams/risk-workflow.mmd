@@ -1,0 +1,14 @@
+flowchart TD
+    A[AI Use Case Submitted] --> B[Pre-screening]
+    B --> C{High Impact?}
+    C -- Yes --> D[Full AI Risk Assessment]
+    C -- No --> E[Standard Risk Assessment]
+    D --> F[Controls Selection]
+    E --> F
+    F --> G[Residual Risk]
+    G --> H{Within Appetite?}
+    H -- Yes --> I[Approval Workflow]
+    H -- No --> J[Risk Treatment Plan]
+    J --> G
+    I --> K[Implementation]
+    K --> L[Continuous Monitoring]

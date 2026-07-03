@@ -1,0 +1,109 @@
+site_name: Arquitectura de Gobierno de IA
+site_description: Framework metodológico de Gobierno de IA para empresas reguladas
+site_author: Chief AI Office
+repo_name: arquitectura-gobierno-ia
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - Inicio: README.md
+  - Estrategia:
+      - AI Governance Charter: 01-strategy/ai-governance-charter.md
+      - AI Operating Model: 01-strategy/ai-operating-model.md
+      - AI Maturity Model: 01-strategy/ai-maturity-model.md
+      - AI Roadmap: 01-strategy/ai-roadmap.md
+      - AI Investment Prioritization: 01-strategy/ai-investment-prioritization.md
+  - Gobierno:
+      - AI Policy: 02-governance/ai-policy.md
+      - AI Ethics Principles: 02-governance/ai-ethics-principles.md
+      - AI Decision Rights RACI: 02-governance/ai-decision-rights-raci.md
+      - AI Council Operating Model: 02-governance/ai-council-operating-model.md
+      - AI Use Case Intake Process: 02-governance/ai-use-case-intake-process.md
+  - Riesgo:
+      - AI Risk Framework: 03-risk/ai-risk-framework.md
+      - AI Risk Scoring Matrix: 03-risk/ai-risk-scoring-matrix.md
+      - Model Risk Management: 03-risk/model-risk-management.md
+      - GenAI Risk Framework: 03-risk/genai-risk-framework.md
+      - AI Controls Catalog: 03-risk/ai-controls-catalog.md
+  - Gobierno de Datos:
+      - Data Policy for AI: 04-data-governance/data-policy-for-ai.md
+      - Dataset Registry: 04-data-governance/dataset-registry.md
+      - Data Lineage Standard: 04-data-governance/data-lineage-standard.md
+      - Data Quality Framework: 04-data-governance/data-quality-framework.md
+      - PII Protection Standard: 04-data-governance/pii-protection-standard.md
+  - Gobierno de Modelos:
+      - Model Lifecycle: 05-model-governance/model-lifecycle.md
+      - Model Card Template: 05-model-governance/model-card-template.md
+      - Model Approval Checklist: 05-model-governance/model-approval-checklist.md
+      - Model Registry: 05-model-governance/model-registry.md
+      - Explainability Standard: 05-model-governance/explainability-standard.md
+      - Validation Report Template: 05-model-governance/validation-report-template.md
+      - Bias & Fairness Standard: 05-model-governance/bias-fairness-standard.md
+  - GenAI y Agentes:
+      - Gobierno de LLMs: 06-genai-agent-governance/llm-governance.md
+      - Gobierno de Prompts: 06-genai-agent-governance/prompt-governance.md
+      - Gobierno de RAG: 06-genai-agent-governance/rag-governance.md
+      - Gobierno de Agentes: 06-genai-agent-governance/agent-governance.md
+      - Guardrails: 06-genai-agent-governance/guardrails-standard.md
+      - Human-in-the-Loop: 06-genai-agent-governance/human-in-the-loop.md
+      - Evaluación de LLMs: 06-genai-agent-governance/llm-evaluation-standard.md
+  - Seguridad IA:
+      - Estándar de Seguridad: 07-security/ai-security-standard.md
+      - Prompt Injection: 07-security/prompt-injection-controls.md
+      - Adversarial AI: 07-security/adversarial-ai.md
+      - Secretos y Llaves: 07-security/secrets-and-keys.md
+      - IA de Terceros: 07-security/third-party-ai-security.md
+  - ModelOps y LLMOps:
+      - Monitoreo: 08-modelops/monitoring-standard.md
+      - Drift: 08-modelops/drift-management.md
+      - Reentrenamiento: 08-modelops/retraining-policy.md
+      - SLOs y SLAs: 08-modelops/slos-slas.md
+      - Despliegue: 08-modelops/model-deployment-standard.md
+      - Incidentes IA: 08-modelops/incident-runbook-ai.md
+      - LLMOps: 08-modelops/llmops-standard.md
+      - AI FinOps: 08-modelops/ai-finops.md
+  - Auditoría y Compliance:
+      - Audit Framework: 09-audit-compliance/audit-framework.md
+      - Audit Checklist: 09-audit-compliance/audit-checklist.md
+      - Evidence Requirements: 09-audit-compliance/evidence-requirements.md
+      - Regulatory Mapping: 09-audit-compliance/regulatory-mapping.md
+      - AI Incident Management: 09-audit-compliance/ai-incident-management.md
+      - Controls Matrix: 09-audit-compliance/controls-matrix.md
+  - KPIs:
+      - AI KPIs: 10-kpis/ai-kpis.md
+      - Governance Dashboard: 10-kpis/governance-dashboard.md
+      - Value Realization: 10-kpis/value-realization.md
+  - Templates:
+      - Model Card: 11-templates/template-model-card.md
+      - Risk Assessment: 11-templates/template-risk-assessment.md
+      - AI Project: 11-templates/template-ai-project.md
+      - Audit Report: 11-templates/template-audit-report.md
+      - Exception Request: 11-templates/template-exception-request.md
+      - AI ADR Template: 11-templates/ai-adr-template.md
+  - Arquitecturas de Referencia:
+      - AI Reference Architecture: 12-reference-architecture/ai-reference-architecture.md
+      - GenAI Reference Architecture: 12-reference-architecture/genai-reference-architecture.md
+      - ModelOps Architecture: 12-reference-architecture/modelops-architecture.md
+      - AI Data Architecture: 12-reference-architecture/ai-data-architecture.md
+  - Nota Lote 4: README_LOTE_4.md
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
