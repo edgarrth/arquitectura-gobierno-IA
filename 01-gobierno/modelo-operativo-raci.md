@@ -1,10 +1,9 @@
 # Modelo operativo y RACI
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Definir un modelo de gobierno de IA liviano, compatible con squads ágiles y suficiente para una fintech regulada.
+Definir un modelo de gobierno de IA lijero, compatible con squads ágiles y 
+suficiente para una empresa regulada.
 
 # Estructura propuesta
 
@@ -33,7 +32,7 @@ flowchart LR
 | AI Lead | Mantiene estándar, fast track, inventario, excepciones y dashboard. |
 | Internal Audit | Revisa evidencia de forma independiente. |
 
-# AI Office Lite
+# AI Office
 
 Equipo virtual, no necesariamente un área nueva. Debe tener representantes de:
 

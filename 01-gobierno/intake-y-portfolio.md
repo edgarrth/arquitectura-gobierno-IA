@@ -1,10 +1,9 @@
 # Intake y portfolio de casos IA
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Registrar, clasificar, priorizar y dar seguimiento a los casos de uso de IA con el menor esfuerzo documental posible.
+Registrar, clasificar, priorizar y dar seguimiento a los casos de uso de IA 
+con los documentos necesarios.
 
 # Flujo de intake
 

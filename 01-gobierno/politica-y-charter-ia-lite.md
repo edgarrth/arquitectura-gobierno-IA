@@ -1,10 +1,9 @@
 # Política y charter de IA lite
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Propósito
 
-Definir las reglas corporativas mínimas para diseñar, comprar, integrar, operar y auditar soluciones de IA en una fintech. Este documento consolida política, charter y principios éticos en un solo artefacto.
+Definir las reglas corporativas mínimas para diseñar, comprar, integrar, 
+operar y auditar soluciones de IA en una fintech. Este documento consolida política, charter y principios éticos en un solo artefacto.
 
 # Alcance
 

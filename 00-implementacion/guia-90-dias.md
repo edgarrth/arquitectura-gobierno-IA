@@ -1,10 +1,8 @@
 # Guía de implementación en 90 días
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Implementar Gobierno de IA con enfoque agile, mínimo viable y auditable, evitando crear una carga documental innecesaria para una fintech.
+Implementar Gobierno de IA con enfoque agile, mínimo viable y auditable.
 
 # Resultado esperado
 
@@ -106,12 +104,3 @@ Un caso puede pasar a producción si tiene:
 | AI-UC-2026-004 RAG normativo | 5 | Fuentes aprobadas + grounding | Compliance |
 | AI-UC-2026-005 Agente conciliaciones | 8 | Límites de herramientas + aprobación humana | Operaciones Backoffice |
 
-# Anti-patrones a evitar
-
-| Anti-patrón | Riesgo | Corrección |
-|---|---|---|
-| Pedir 15 documentos a todos los casos | Burocracia y bypass del proceso | Controles por tier |
-| Comité revisa casos de bajo riesgo | Lentitud | Fast track |
-| Model card sin monitoreo | Evidencia estática | Dashboard operativo |
-| Prompts en documentos sueltos | No reproducibilidad | Prompt registry |
-| Vendor AI sin evaluación | Riesgo de terceros | TPRM + seguridad + datos |
