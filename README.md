@@ -1,191 +1,130 @@
-# Arquitectura de Gobierno de IA
+# Gobierno de IA Fintech Lite / Agile
+
+> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
 
 # Propósito
 
-Este repositorio define una metodología híbrida de Gobierno de Inteligencia Artificial 
-para empresas reguladas. Combina gobierno ejecutivo, 
-gestión de riesgos, arquitectura empresarial y controles técnicos.
+Este repositorio es una versión liviana del framework de Gobierno de IA para una fintech regulada. Mantiene los controles mínimos de IA responsable, seguridad, riesgo, auditoría y operación, pero reduce la documentación para que pueda ser implementada por squads ágiles sin crear una oficina burocrática.
 
-El framework busca que una organización pueda identificar, priorizar, aprobar, 
-construir, operar, monitorear y auditar soluciones de IA, IA Generativa 
-y agentes inteligentes de forma responsable, segura y trazable.
+# Qué problema resuelve
 
-# Alcance
+El repositorio original separaba estrategia, gobierno, riesgo, datos, modelos, GenAI, seguridad, ModelOps, auditoría, KPIs, templates y arquitectura en muchos documentos. Esta versión consolida esos dominios en un set mínimo de artefactos operativos.
 
-El marco aplica a iniciativas de:
+# Principios de diseño
 
-- Machine Learning predictivo.
-- Modelos de scoring, fraude, cobranza y recomendación.
-- IA Generativa para atención, productividad, análisis documental y copilotos internos.
-- Arquitecturas RAG.
-- Agentes inteligentes con herramientas, memoria, autonomía parcial o integración con sistemas corporativos.
-- Modelos propios, modelos open source, servicios SaaS de IA y modelos de terceros.
+| Principio | Aplicación práctica |
+|---|---|
+| Gobierno proporcional al riesgo | Tier 1 y 2 tienen revisión formal; Tier 3 y 4 usan fast track con evidencias mínimas. |
+| Documentación como producto | Cada documento debe ayudar a tomar una decisión, aprobar un release o demostrar control. |
+| Control embebido en el delivery | El squad completa el AI Release Pack durante discovery, build y release. |
+| Evidencia reutilizable | Un mismo registro sirve para gobierno, auditoría, ModelOps y compliance. |
+| Agilidad con accountability | Menos documentos, pero owners, decisiones y riesgos siempre trazables. |
 
-# Metodología usada
+# Estructura mínima
 
-La metodología se organiza en fases, cada una asociada a artefactos de gobierno, 
-controles y entregables.
+```text
+gobierno-ia-fintech-lite/
+├── README.md
+├── mkdocs.yml
+├── 00-implementacion/
+│   └── guia-90-dias.md
+├── 01-gobierno/
+│   ├── politica-y-charter-ia-lite.md
+│   ├── modelo-operativo-raci.md
+│   └── intake-y-portfolio.md
+├── 02-riesgo-controles/
+│   ├── clasificacion-riesgo-y-controles.md
+│   └── mapeo-estandares.md
+├── 03-data-model-genai/
+│   ├── data-model-governance.md
+│   └── genai-rag-agent-governance.md
+├── 04-operacion-auditoria/
+│   ├── seguridad-modelops-evidencias.md
+│   └── kpis-y-dashboard.md
+├── templates/
+│   ├── ai-use-case-intake.md
+│   ├── ai-risk-assessment.md
+│   ├── model-card-lite.md
+│   └── exception-request.md
+├── data-simulada/
+│   ├── ai_use_cases.csv
+│   ├── model_registry.csv
+│   ├── risk_assessments.csv
+│   ├── controls_evidence.csv
+│   ├── model_metrics.csv
+│   ├── rag_evaluation.csv
+│   └── incidents.csv
+└── diagrams/
+    ├── ai-governance-agile-lifecycle.mmd
+    └── ai-release-pack-flow.mmd
+```
 
-## Fase 1: Strategy & AI Governance Foundation
+# Documentos core
 
-Define la visión, principios, alcance, roles, comités, apetito de riesgo y 
-modelo operativo de IA.
+| Documento | Reemplaza documentos del framework completo | Cuándo se usa |
+|---|---|---|
+| `politica-y-charter-ia-lite.md` | AI Policy, AI Governance Charter, Ethics Principles | Define reglas corporativas, usos permitidos/restringidos/prohibidos y autoridad mínima. |
+| `modelo-operativo-raci.md` | Operating Model, Council, RACI | Define roles, comité liviano y derechos de decisión. |
+| `intake-y-portfolio.md` | Use Case Intake, Roadmap, Prioritization | Registra, prioriza y mantiene inventario de casos IA. |
+| `clasificacion-riesgo-y-controles.md` | Risk Framework, Scoring Matrix, Controls Catalog | Calcula tier de riesgo y asigna controles mínimos. |
+| `mapeo-estandares.md` | Regulatory Mapping, Audit Framework | Mapea controles a NIST AI RMF, ISO 42001, EU AI Act, ISO 27001, PCI DSS, SR 11-7 y OWASP LLM. |
+| `data-model-governance.md` | Data Policy, Dataset Registry, Model Card, Validation Report | Consolida dataset card, model card lite y validación mínima. |
+| `genai-rag-agent-governance.md` | LLM, RAG, Prompt, Agent, Guardrails, HITL | Define controles para LLMs, RAG y agentes. |
+| `seguridad-modelops-evidencias.md` | Security Standard, Monitoring, Drift, Incident, Evidence | Define controles técnicos, monitoreo y evidencias de operación. |
+| `kpis-y-dashboard.md` | KPIs, Governance Dashboard, Value Realization | Dashboard ejecutivo y operativo. |
 
-Artefactos principales:
-
-- AI Governance Charter.
-- AI Operating Model.
-- AI Maturity Model.
-- AI Roadmap.
-- AI Investment Prioritization.
-- AI Policy.
-- AI Ethics Principles.
-- AI Decision Rights RACI.
-- AI Council Operating Model.
-- AI Use Case Intake Process.
-
-Frameworks usados:
-
-- ISO/IEC 42001 para sistema de gestión de IA.
-- NIST AI RMF para gobierno, mapeo, medición y gestión del riesgo.
-- COBIT para gobierno de tecnología.
-- TOGAF para gobierno de arquitectura.
-
-## Fase 2: Data & Risk Governance
-
-Controla datos, riesgos, calidad, linaje, privacidad, clasificación de casos de uso y 
-evaluación de impacto.
-
-Frameworks usados:
-
-- DAMA DMBOK.
-- DCAM.
-- NIST AI RMF.
-- EU AI Act como referencia de clasificación de riesgo.
-- SR 11-7 como referencia de model risk management en banca.
-
-## Fase 3: Model, GenAI & Agent Governance
-
-Define cómo se documentan, validan, aprueban, versionan y monitorean modelos 
-tradicionales, LLMs y agentes.
-
-Frameworks usados:
-
-- Model Risk Management.
-- NIST AI RMF.
-- ISO/IEC 42001.
-- OWASP Top 10 for LLM Applications.
-- LLMOps y MLOps practices.
-
-## Fase 4: Runtime, Audit & Continuous Assurance
-
-Define observabilidad, drift, incidentes, auditoría, evidencias, KPIs, 
-auditoría continua y mejora del framework.
-
-Frameworks usados:
-
-- ISO 27001.
-- PCI DSS, cuando existan datos de tarjetas.
-- COBIT.
-- NIST AI RMF.
-- ISO/IEC 42001.
-
-# Modelo de gobierno de extremo a extremo
+# Flujo agile propuesto
 
 ```mermaid
 flowchart TD
-    A[Business Strategy] --> B[AI Use Case Intake]
-    B --> C[Risk Classification]
-    C --> D[Data Readiness Review]
-    D --> E[Architecture & Security Review]
-    E --> F[Model Development or Vendor Evaluation]
-    F --> G[Independent Validation]
-    G --> H[AI Council Approval]
-    H --> I[Production Release]
-    I --> J[Monitoring and Audit Evidence]
-    J --> K[Periodic Review or Retirement]
+    A[Idea de IA] --> B[Intake de 1 página]
+    B --> C[Risk Tier automático]
+    C --> D{Tier 1/2?}
+    D -- Sí --> E[AI Council liviano]
+    D -- No --> F[Fast Track AI Office]
+    E --> G[AI Release Pack]
+    F --> G
+    G --> H[Build con controles embebidos]
+    H --> I[Release Approval]
+    I --> J[Monitoreo y evidencia continua]
 ```
 
-# Principios rectores
+# AI Release Pack mínimo
 
-## IA responsable por diseño
+El `AI Release Pack` es el paquete único de evidencia para pasar a producción. Evita múltiples documentos separados.
 
-Cada iniciativa de IA debe incorporar controles de privacidad, seguridad, 
-explicabilidad, trazabilidad y supervisión humana desde su fase de ideación.
+| Evidencia | Tier 1 | Tier 2 | Tier 3 | Tier 4 |
+|---|---:|---:|---:|---:|
+| Use Case Intake | Sí | Sí | Sí | Sí |
+| Risk Assessment | Sí | Sí | Sí | Sí, simple |
+| Data & Privacy Review | Sí | Sí | Si usa PII | No, salvo PII |
+| Model Card Lite o GenAI Card | Sí | Sí | Sí | Opcional |
+| Validación independiente | Sí | Según impacto | No | No |
+| Security Review | Sí | Sí | Sí | Básico |
+| Monitoring Plan | Sí | Sí | Sí | Básico |
+| Human Oversight | Sí | Sí | Si impacta cliente | No |
+| Evidence Log | Sí | Sí | Sí | Sí |
 
-## Riesgo proporcional
+# Datos simulados incluidos
 
-Los controles se aplican según el impacto del caso de uso. 
-Un modelo de scoring crediticio requiere mayor revisión que un asistente interno 
-de resumen documental.
+Los archivos CSV permiten iniciar un dashboard o cargar ejemplos a Jira, ServiceNow, GRC, Data Catalog, MLflow, Grafana o una wiki interna. Los registros simulan casos como fraude transaccional, scoring alternativo, RAG normativo, copiloto de atención, agente de conciliaciones, OCR KYC y predicción de mora temprana.
 
-## Trazabilidad completa
+# Cómo usarlo en una fintech
 
-Toda decisión relevante debe poder responder:
+1. Crear un repositorio interno con esta estructura.
+2. Definir un AI Office liviano: Arquitectura, Riesgos, Seguridad, Data, Legal/Compliance y Product.
+3. Registrar todos los casos en `data-simulada/ai_use_cases.csv` o su equivalente real.
+4. Usar `templates/ai-use-case-intake.md` y `templates/ai-risk-assessment.md` desde discovery.
+5. Exigir el AI Release Pack solo al pasar a producción.
+6. Revisar mensualmente KPIs, incidentes, excepciones y modelos Tier 1/2.
 
-- Qué modelo se usó.
-- Qué versión estaba activa.
-- Qué datos alimentaron el resultado.
-- Quién aprobó el despliegue.
-- Qué controles se ejecutaron.
-- Qué explicación se entregó al negocio, auditoría o regulador.
+# Reglas de actualización
 
-## Human-in-the-loop
-
-Las decisiones de alto impacto no deben ejecutarse de forma completamente autónoma 
-sin mecanismos de revisión, apelación o intervención humana.
-
-
-# Cómo usar este framework
-
-## Para C level
-
-Usar los documentos de estrategia, operating model, roadmap, KPIs y comité para formalizar la Oficina de IA.
-
-## Para Arquitectura Empresarial
-
-Usar los estándares, diagramas y procesos de revisión para integrar IA al gobierno de arquitectura.
-
-## Para Riesgos y Compliance
-
-Usar la clasificación de riesgo, RACI, políticas y evidencias de aprobación para auditoría y control.
-
-## Para Equipos Técnicos
-
-Usar los procesos de intake, validación, checklist y criterios de despliegue para implementar IA con trazabilidad.
-
-# Estructura consolidada
-
-```text
-arquitectura-gobierno-ia/
-├── README.md
-├── mkdocs.yml
-├── LICENSE
-├── 01-strategy/
-├── 02-governance/
-├── 03-risk/
-├── 04-data-governance/
-├── 05-model-governance/
-├── 06-genai-agent-governance/
-├── 07-security/
-├── 08-modelops/
-├── 09-audit-compliance/
-├── 10-kpis/
-├── 11-templates/
-├── 12-reference-architecture/
-└── diagrams/
-```
-
-# Cobertura metodológica final
-
-| Fase | Objetivo | Documentación principal |
+| Cambio | Quién aprueba | Evidencia |
 |---|---|---|
-| 1. Estrategia y fundación | Definir mandato, operating model, roadmap y comité IA | `01-strategy`, `02-governance` |
-| 2. Riesgo y datos | Clasificar riesgos, controlar datos, calidad, privacidad y lineage | `03-risk`, `04-data-governance` |
-| 3. Modelos, GenAI y agentes | Gobernar modelos, LLMs, RAG, prompts, agentes y guardrails | `05-model-governance`, `06-genai-agent-governance` |
-| 4. Seguridad y operación | Operar con seguridad, monitoreo, drift, SLOs, LLMOps y AI FinOps | `07-security`, `08-modelops` |
-| 5. Auditoría y assurance | Gestionar evidencia, controles, incidentes, compliance y auditoría | `09-audit-compliance` |
-| 6. Medición de valor | Medir KPIs, valor realizado y dashboard ejecutivo CAIO | `10-kpis` |
-| 7. Estandarización | Usar templates, ADRs y arquitecturas de referencia | `11-templates`, `12-reference-architecture`, `diagrams` |
-
-
+| Nuevo caso Tier 3/4 | AI Office | Intake + risk assessment |
+| Nuevo caso Tier 1/2 | AI Council | AI Release Pack |
+| Cambio de modelo productivo | Model Owner + AI Office | Model Card Lite + métricas |
+| Cambio de prompt crítico | Product Owner + Security | Prompt diff + evaluación |
+| Excepción de control | Risk Owner + AI Lead | Exception Request |
+| Incidente Sev1/Sev2 | AI Ops + CISO + Risk | Incident log + RCA |

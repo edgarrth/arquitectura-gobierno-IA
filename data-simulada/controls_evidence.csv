@@ -1,0 +1,10 @@
+control_id,control,coverage,status,evidence_ref,owner
+GOV-001,Caso registrado en AI Portfolio,8/8,OK,data-simulada/ai_use_cases.csv,AI Lead
+RSK-001,Risk assessment vigente,8/8,OK,data-simulada/risk_assessments.csv,Risk Owner
+DAT-001,Data owner y propósito autorizado,5/5 PII cases,OK,Data Catalog synthetic refs,Data Governance
+MOD-001,Model/GenAI Card Lite,6/6 systems,OK,templates/model-card-lite.md + registry,Model Owners
+MOD-002,Validación independiente Tier 1,1/2,Warning,CRD-LGBM-WALLET pending validation,Model Risk
+SEC-002,DLP/secrets/logging seguro,5/5 high impact,OK,SIEM-DLP synthetic logs,Security Owner
+GEN-002,Guardrails y pruebas de alucinación,3/3 GenAI/RAG/Agent,OK,data-simulada/rag_evaluation.csv,AI Platform
+OPS-001,Monitoreo activo,3/3 productive systems,OK,data-simulada/model_metrics.csv,AI Ops
+AUD-001,Evidence log,8/8,OK,AI Release Pack links,AI Lead
