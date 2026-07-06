@@ -2,11 +2,13 @@
 
 # Objetivo
 
-Priorizar iniciativas de IA con criterios balanceados de valor, riesgo, factibilidad, cumplimiento y capacidad operativa.
+Priorizar iniciativas de IA con criterios balanceados de valor, riesgo, 
+factibilidad, cumplimiento y capacidad operativa.
 
 # Principio
 
-No toda iniciativa de IA debe aprobarse por entusiasmo tecnológico. La priorización debe demostrar valor medible, riesgo aceptable y capacidad de operación responsable.
+No toda iniciativa de IA debe aprobarse por entusiasmo tecnológico. 
+La priorización debe demostrar valor medible, riesgo aceptable y capacidad de operación responsable.
 
 # Criterios de priorización
 

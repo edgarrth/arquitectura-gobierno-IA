@@ -24,9 +24,10 @@ flowchart TD
 
 # Componentes
 
-## Chief AI Office
+## Chief AI Office (AI Chapter)
 
-Responsable de la metodología, estándares, inventario, priorización y reporting ejecutivo.
+Responsable de la metodología, estándares, inventario, priorización y 
+reporting ejecutivo.
 
 ## AI Governance Council
 

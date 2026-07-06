@@ -4,11 +4,11 @@
 
 El AI Governance Charter formaliza la autoridad, alcance y responsabilidades de la Oficina de IA en una organización regulada. Su objetivo es asegurar que toda iniciativa de IA sea evaluada, aprobada, operada y auditada bajo criterios consistentes de valor, riesgo, cumplimiento, seguridad y ética.
 
-# Mandato de la Oficina de IA
+# Chapter de IA
 
-La Oficina de IA actúa como autoridad metodológica y de control para:
+El chapter de IA actúa como autoridad metodológica y de control para:
 
-- Definir políticas corporativas de IA.
+- Definir políticas empresariales de IA.
 - Clasificar riesgos de casos de uso.
 - Aprobar estándares de arquitectura, datos, seguridad y monitoreo.
 - Mantener inventario de casos de uso, modelos, datasets y vendors.
@@ -17,7 +17,8 @@ La Oficina de IA actúa como autoridad metodológica y de control para:
 
 # Alcance
 
-Aplica a iniciativas de IA desarrolladas internamente, compradas a terceros, integradas como SaaS o usadas mediante APIs externas.
+Aplica a iniciativas de IA desarrolladas internamente, compradas a terceros, 
+integradas como SaaS o usadas mediante APIs externas.
 
 Incluye:
 
@@ -33,11 +34,13 @@ Incluye:
 
 ## Autoridad de aprobación
 
-Ningún sistema de IA de impacto alto o crítico debe pasar a producción sin aprobación formal del AI Governance Council.
+Ningún sistema de IA de impacto alto o crítico debe pasar a producción sin 
+aprobación formal del AI Chapter Lead.
 
 ## Autoridad de suspensión
 
-La Oficina de IA puede recomendar la suspensión temporal de un modelo cuando existan señales de:
+El chapter de IA puede recomendar la suspensión temporal de un modelo 
+cuando existan señales de:
 
 - Drift crítico.
 - Sesgo material.
@@ -48,7 +51,8 @@ La Oficina de IA puede recomendar la suspensión temporal de un modelo cuando ex
 
 ## Autoridad de excepción
 
-Las excepciones deben documentarse, aprobarse con vigencia limitada y tener plan de remediación.
+Las excepciones deben documentarse, aprobarse con vigencia limitada y 
+tener plan de remediación.
 
 # Modelo de accountability
 
@@ -76,7 +80,8 @@ Las excepciones deben documentarse, aprobarse con vigencia limitada y tener plan
 
 # Ejemplo de aplicación
 
-Una empresa financiera quiere desplegar un modelo de fraude transaccional. El caso se registra como Tier 1 porque puede bloquear operaciones de clientes. Antes de producción debe contar con model card, validación independiente, explicación SHAP, pruebas de sesgo por segmento, aprobación del AI Council y monitoreo de drift.
+Una empresa financiera quiere desplegar un modelo de fraude transaccional. 
+El caso se registra como Tier 1 porque puede bloquear operaciones de clientes. Antes de producción debe contar con model card, validación independiente, explicación SHAP, pruebas de sesgo por segmento, aprobación del AI Council y monitoreo de drift.
 
 # Evidencias mínimas
 

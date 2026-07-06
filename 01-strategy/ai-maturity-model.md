@@ -2,7 +2,8 @@
 
 # Propósito
 
-Evaluar el nivel de madurez de una organización en gobierno, riesgo, datos, modelos, GenAI, operación y auditoría de IA.
+Evaluar el nivel de madurez de una organización en gobierno, riesgo, datos, 
+modelos, GenAI, operación y auditoría de IA.
 
 # Niveles de madurez
 
@@ -69,7 +70,8 @@ Evaluar el nivel de madurez de una organización en gobierno, riesgo, datos, mod
 
 # Interpretación
 
-Una empresa regulada no debería operar casos Tier 1 si su madurez de Model Risk, Seguridad y Auditoría está por debajo de 3.
+Una empresa regulada no debería operar casos Tier 1 si su madurez de Model Risk, 
+Seguridad y Auditoría está por debajo de 3.
 
 # Plan de mejora
 
