@@ -1,10 +1,9 @@
 # Gobierno de GenAI, RAG y agentes
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Definir controles mínimos para copilotos, RAGs y agentes de IA, manteniendo trazabilidad y seguridad sin separar múltiples documentos.
+Definir controles mínimos para copilotos, RAGs y agentes de IA, 
+manteniendo trazabilidad y seguridad sin separar múltiples documentos.
 
 # Tipos de soluciones GenAI
 

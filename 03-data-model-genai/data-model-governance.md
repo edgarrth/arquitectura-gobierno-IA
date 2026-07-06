@@ -1,14 +1,13 @@
 # Data governance y model governance lite
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Consolidar en un solo documento los controles mínimos de datos, datasets, modelos, validación y model registry.
+Consolidar en un solo documento los controles mínimos de datos, 
+datasets, modelos, validación y model registry.
 
 # Regla central
 
-Todo sistema IA que use datos corporativos debe poder responder:
+Todo sistema IA que use datos empresariales debe poder responder:
 
 - qué datos usa;
 - para qué propósito;
@@ -19,7 +18,7 @@ Todo sistema IA que use datos corporativos debe poder responder:
 - qué limitaciones y riesgos tiene;
 - cómo se monitorea.
 
-# Dataset Card Lite
+# Dataset Card 
 
 | Campo | Ejemplo simulado |
 |---|---|
@@ -35,7 +34,7 @@ Todo sistema IA que use datos corporativos debe poder responder:
 | Sesgos conocidos | subrepresentación de comercios nuevos y tickets internacionales |
 | Restricciones | No usar para campañas comerciales sin nuevo propósito aprobado |
 
-# Model Card Lite
+# Model Card
 
 | Campo | Ejemplo simulado |
 |---|---|

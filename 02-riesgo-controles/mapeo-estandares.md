@@ -1,10 +1,10 @@
 # Mapeo de estándares y cumplimiento
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Demostrar que el framework lite mantiene trazabilidad contra los estándares definidos para Gobierno de IA, seguridad, riesgo y auditoría, sin replicar documentos separados por cada marco.
+Demostrar que el framework lite mantiene trazabilidad contra los estándares 
+definidos para Gobierno de IA, seguridad, riesgo y auditoría, sin replicar 
+documentos separados por cada marco.
 
 # Marcos usados
 

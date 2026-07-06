@@ -1,10 +1,9 @@
 # Clasificación de riesgo y controles mínimos
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
-Definir una metodología de riesgo proporcional para que los squads sepan qué controles aplicar sin crear documentación excesiva.
+Definir una metodología de riesgo proporcional para que los squads 
+sepan qué controles aplicar sin crear documentación excesiva.
 
 # Taxonomía de riesgo
 
