@@ -2,7 +2,8 @@
 
 # Propósito
 
-Definir la metodología corporativa para identificar, clasificar, evaluar, aprobar y monitorear riesgos de sistemas de inteligencia artificial en empresas reguladas.
+Definir la metodología empresarial para identificar, clasificar, 
+evaluar, aprobar y monitorear riesgos de sistemas de inteligencia artificial en empresas reguladas.
 
 # Marcos usados
 

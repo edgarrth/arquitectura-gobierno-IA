@@ -2,7 +2,8 @@
 
 # Propósito
 
-Establecer el modelo de funcionamiento del AI Governance Council como órgano de decisión y supervisión de IA.
+Establecer el modelo de funcionamiento del AI Governance Council como órgano de 
+decisión y supervisión de IA.
 
 # Objetivos del AI Council
 

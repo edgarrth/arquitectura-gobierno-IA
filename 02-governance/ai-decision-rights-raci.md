@@ -2,7 +2,8 @@
 
 # Objetivo
 
-Definir quién propone, aprueba, valida, opera y audita las decisiones clave del ciclo de vida de IA.
+Definir quién propone, aprueba, valida, opera y audita las decisiones 
+clave del ciclo de vida de IA.
 
 # Roles
 

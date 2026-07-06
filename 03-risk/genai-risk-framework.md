@@ -2,7 +2,8 @@
 
 # Propósito
 
-Gestionar riesgos específicos de IA generativa, LLMs, RAG, copilots y agentes autónomos.
+Gestionar riesgos específicos de IA generativa, LLMs, RAG, copilots y 
+agentes autónomos.
 
 # Riesgos principales
 
