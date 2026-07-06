@@ -1,14 +1,9 @@
 # Gobierno de IA Fintech Lite / Agile
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Propósito
 
-Este repositorio es una versión liviana del framework de Gobierno de IA para una fintech regulada. Mantiene los controles mínimos de IA responsable, seguridad, riesgo, auditoría y operación, pero reduce la documentación para que pueda ser implementada por squads ágiles sin crear una oficina burocrática.
-
-# Qué problema resuelve
-
-El repositorio original separaba estrategia, gobierno, riesgo, datos, modelos, GenAI, seguridad, ModelOps, auditoría, KPIs, templates y arquitectura en muchos documentos. Esta versión consolida esos dominios en un set mínimo de artefactos operativos.
+Este repositorio es una versión liviana del framework de Gobierno de IA 
+para una empresa regulada. Mantiene los controles mínimos de IA responsable, seguridad, riesgo, auditoría y operación, pero reduce la documentación para que pueda ser implementada por squads ágiles sin crear una oficina burocrática.
 
 # Principios de diseño
 
