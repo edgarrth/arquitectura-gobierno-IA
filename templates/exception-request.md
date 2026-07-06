@@ -1,7 +1,5 @@
 # Template: Solicitud de excepción de control IA
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # 1. Información de la excepción
 
 | Campo | Valor |

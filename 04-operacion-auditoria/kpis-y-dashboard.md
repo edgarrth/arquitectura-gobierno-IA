@@ -1,7 +1,5 @@
 # KPIs y dashboard de gobierno de IA
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
 Definir métricas ejecutivas y operativas para demostrar valor, control, seguridad y cumplimiento del portfolio de IA.

@@ -1,7 +1,5 @@
 # Seguridad, ModelOps y evidencias
 
-> Nota: todos los ejemplos y registros usan datos simulados realistas para una fintech. No contienen datos productivos, PII real, PAN real, secretos, credenciales ni información confidencial.
-
 # Objetivo
 
 Consolidar seguridad IA, operación, monitoreo, incidentes y evidencia auditable en un solo documento práctico.
