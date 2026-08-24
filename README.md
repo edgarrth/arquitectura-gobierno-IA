@@ -131,3 +131,15 @@ El sitio se publica como **Project Pages**, por lo que su raíz no es `https://e
 `https://edgarrth.github.io/arquitectura-gobierno-IA/`
 
 El workflow obtiene esta URL mediante `actions/configure-pages` y la pasa a MkDocs como `MKDOCS_SITE_URL`. Esto evita que las páginas anidadas (por ejemplo `templates/*.html`) intenten cargar CSS, JavaScript o enlaces desde la raíz incorrecta del dominio.
+
+## Nota sobre `docs/templates`
+
+MkDocs excluye por defecto la carpeta superior `/templates/` dentro de `docs_dir`, porque ese nombre se reserva para templates del tema. Este proyecto la re-incluye explícitamente mediante:
+
+```yaml
+exclude_docs: |
+  !/templates/
+```
+
+No retirar esta configuración mientras las plantillas de Gobierno de IA permanezcan bajo `docs/templates/`.
+

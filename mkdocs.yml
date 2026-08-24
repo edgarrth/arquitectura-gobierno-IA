@@ -9,6 +9,11 @@ docs_dir: docs
 site_dir: site
 use_directory_urls: false
 
+# MkDocs excluye /templates/ por defecto porque reserva ese nombre para templates del tema.
+# Lo re-incluimos explícitamente para publicar nuestras plantillas Markdown.
+exclude_docs: |
+  !/templates/
+
 nav:
   - Inicio: index.md
   - Implementación 90 días: 00-implementacion/guia-90-dias.md
