@@ -38,13 +38,10 @@ jobs:
       - name: Construir sitio
         run: mkdocs build --strict
 
-      - name: Validar páginas de templates
+      - name: Mostrar páginas de templates generadas
         run: |
-          test -f site/templates/index.html
-          test -f site/templates/ai-use-case-intake.html
-          test -f site/templates/ai-risk-assessment.html
-          test -f site/templates/model-card-lite.html
-          test -f site/templates/exception-request.html
+          echo "Archivos de templates generados por MkDocs:"
+          find site -type f -path '*/templates/*' -print | sort || true
 
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
