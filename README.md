@@ -123,3 +123,11 @@ pip install -r requirements.txt
 python scripts/generate_data_page.py
 mkdocs serve
 ```
+
+## GitHub Pages: URL base
+
+El sitio se publica como **Project Pages**, por lo que su raíz no es `https://edgarrth.github.io/` sino:
+
+`https://edgarrth.github.io/arquitectura-gobierno-IA/`
+
+El workflow obtiene esta URL mediante `actions/configure-pages` y la pasa a MkDocs como `MKDOCS_SITE_URL`. Esto evita que las páginas anidadas (por ejemplo `templates/*.html`) intenten cargar CSS, JavaScript o enlaces desde la raíz incorrecta del dominio.

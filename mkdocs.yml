@@ -1,5 +1,10 @@
 site_name: Gobierno de IA Fintech Lite
 site_description: Framework agile y mínimo viable de Gobierno de IA para fintech regulada
+# GitHub Pages publica este repositorio bajo /arquitectura-gobierno-IA/.
+# En CI, MKDOCS_SITE_URL se obtiene automáticamente desde actions/configure-pages.
+site_url: !ENV [MKDOCS_SITE_URL, 'https://edgarrth.github.io/arquitectura-gobierno-IA/']
+repo_url: https://github.com/edgarrth/arquitectura-gobierno-IA
+repo_name: edgarrth/arquitectura-gobierno-IA
 docs_dir: docs
 site_dir: site
 use_directory_urls: false

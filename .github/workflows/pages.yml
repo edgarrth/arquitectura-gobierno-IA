@@ -32,19 +32,31 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
+      # Debe ejecutarse ANTES del build: expone base_url/base_path reales de Pages.
+      - name: Configurar GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Generar páginas de datos simulados
         run: python scripts/generate_data_page.py
 
       - name: Construir sitio
-        run: mkdocs build --strict
-
-      - name: Mostrar páginas de templates generadas
+        env:
+          MKDOCS_SITE_URL: ${{ steps.pages.outputs.base_url }}/
         run: |
-          echo "Archivos de templates generados por MkDocs:"
-          find site -type f -path '*/templates/*' -print | sort || true
+          echo "MkDocs site_url: ${MKDOCS_SITE_URL}"
+          mkdocs build --strict
 
-      - name: Configurar GitHub Pages
-        uses: actions/configure-pages@v5
+      - name: Verificar rutas de assets en Templates
+        run: |
+          echo "HTML generados:"
+          find site/templates -maxdepth 1 -type f -name '*.html' -print | sort || true
+          echo
+          echo "CSS referenciado por Intake:"
+          grep -oE 'href="[^"]*assets/stylesheets/[^"]+"' site/templates/ai-use-case-intake.html | head -5 || true
+          echo
+          echo "JS referenciado por Intake:"
+          grep -oE 'src="[^"]*assets/javascripts/[^"]+"' site/templates/ai-use-case-intake.html | head -5 || true
 
       - name: Subir artefacto de Pages
         uses: actions/upload-pages-artifact@v4
