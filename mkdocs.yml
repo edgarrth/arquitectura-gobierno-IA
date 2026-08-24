@@ -2,6 +2,7 @@ site_name: Gobierno de IA Fintech Lite
 site_description: Framework agile y mínimo viable de Gobierno de IA para fintech regulada
 docs_dir: docs
 site_dir: site
+use_directory_urls: false
 
 nav:
   - Inicio: index.md
@@ -20,6 +21,7 @@ nav:
       - Seguridad, ModelOps y evidencias: 04-operacion-auditoria/seguridad-modelops-evidencias.md
       - KPIs y dashboard: 04-operacion-auditoria/kpis-y-dashboard.md
   - Templates:
+      - Inicio: templates/index.md
       - Intake: templates/ai-use-case-intake.md
       - Risk Assessment: templates/ai-risk-assessment.md
       - Model Card Lite: templates/model-card-lite.md

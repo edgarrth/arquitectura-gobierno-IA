@@ -94,7 +94,7 @@ Los archivos CSV permiten iniciar un dashboard o cargar ejemplos a Jira, Service
 1. Crear un repositorio interno con esta estructura.
 2. Definir un AI Office liviano: Arquitectura, Riesgos, Seguridad, Data, Legal/Compliance y Product.
 3. Registrar todos los casos en `docs/data-simulada/ai_use_cases.csv` o su equivalente real.
-4. Usar `templates/ai-use-case-intake.md` y `templates/ai-risk-assessment.md` desde discovery.
+4. Usar [AI Use Case Intake](templates/ai-use-case-intake.md) y [AI Risk Assessment](templates/ai-risk-assessment.md) desde discovery.
 5. Exigir el AI Release Pack solo al pasar a producción.
 6. Revisar mensualmente KPIs, incidentes, excepciones y modelos Tier 1/2.
 
