@@ -6,13 +6,13 @@
   "core_documents": 10,
   "templates": 4,
   "simulated_data_files": [
-    "data-simulada/ai_use_cases.csv",
-    "data-simulada/model_registry.csv",
-    "data-simulada/risk_assessments.csv",
-    "data-simulada/controls_evidence.csv",
-    "data-simulada/model_metrics.csv",
-    "data-simulada/rag_evaluation.csv",
-    "data-simulada/incidents.csv"
+    "docs/data-simulada/ai_use_cases.csv",
+    "docs/data-simulada/model_registry.csv",
+    "docs/data-simulada/risk_assessments.csv",
+    "docs/data-simulada/controls_evidence.csv",
+    "docs/data-simulada/model_metrics.csv",
+    "docs/data-simulada/rag_evaluation.csv",
+    "docs/data-simulada/incidents.csv"
   ],
   "standards_mapping": [
     "NIST AI RMF",

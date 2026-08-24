@@ -1,0 +1,3 @@
+incident_id,system_id,severity,date_opened,date_closed,summary,root_cause,action,status
+AI-INC-2026-0012,CSC-RAG-CLAIMS-v1.4,Sev3,2026-06-10,2026-06-12,Respuesta sin fuente en consulta de SLA minoritaria durante piloto,documento de SLA no indexado en KB v2026.05,actualizar KB y agregar eval case,Closed
+AI-INC-2026-0013,FRD-XGB-TRANSACTION-v3.2,Sev3,2026-06-24,,PSI warning en feature amount para comercios travel,campaña estacional elevó ticket promedio,monitoreo extendido 7 días y revisión de threshold,Monitoring
