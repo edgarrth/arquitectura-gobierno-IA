@@ -1,0 +1,14 @@
+flowchart TD
+    A[Idea IA] --> B[Intake 1 página]
+    B --> C[Risk scoring]
+    C --> D{Tier}
+    D -->|Tier 0| X[Rechazar]
+    D -->|Tier 1/2| E[AI Council]
+    D -->|Tier 3/4| F[Fast Track AI Office]
+    E --> G[AI Release Pack]
+    F --> G[AI Release Pack Lite]
+    G --> H[Build / Pilot]
+    H --> I[Release Approval]
+    I --> J[Operate / Monitor]
+    J --> K[Audit Evidence]
+    J --> L[Review / Retrain / Retire]

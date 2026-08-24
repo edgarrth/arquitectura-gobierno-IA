@@ -1,0 +1,7 @@
+system_id,use_case_id,type,tier,version,status,owner,training_dataset,approval_date,primary_metric,primary_metric_value,rollback
+FRD-XGB-TRANSACTION-v3.2,AI-UC-2026-001,XGBoost,Tier 1,3.2.1,production,Lead Data Science Fraude,DS-CARD-TRX-RISK-2026Q1-v17,2026-06-12,recall_fraud,0.887,FRD-RULES-v2
+CRD-LGBM-WALLET-v1.1,AI-UC-2026-002,LightGBM,Tier 1,1.1.0-rc2,candidate,Lead Data Science Crédito,DS-WALLET-CREDIT-2026Q1-v08,,ks_statistic,0.421,manual_credit_policy_v2026.02
+CSC-RAG-CLAIMS-v1.4,AI-UC-2026-003,RAG/LLM,Tier 2,1.4.3,pilot,Tech Lead Canales,KB-CLAIMS-2026.05,2026-06-25,groundedness,0.958,human_only_response_workflow
+CMP-RAG-NORM-v2.0,AI-UC-2026-004,RAG,Tier 3,2.0.2,production,Tech Lead Plataforma IA,KB-COMPLIANCE-2026.06,2026-05-30,answer_relevance,0.932,search_portal
+AGT-OPS-RECON-v0.9,AI-UC-2026-005,Agent A2,Tier 2,0.9.7,pilot,Lead Platform Automation,KB-RECON-OPS-2026.04,2026-06-18,human_override_rate,0.124,manual_reconciliation_queue
+MKT-PROP-XSELL-v2.4,AI-UC-2026-006,Gradient Boosting,Tier 3,2.4.0,production,Lead Analytics Marketing,DS-MKT-XSELL-2026Q1-v11,2026-04-14,uplift,0.078,rules_based_segmentation

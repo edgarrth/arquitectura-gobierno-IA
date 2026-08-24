@@ -1,7 +1,10 @@
 site_name: Gobierno de IA Fintech Lite
 site_description: Framework agile y mínimo viable de Gobierno de IA para fintech regulada
+docs_dir: docs
+site_dir: site
+
 nav:
-  - Inicio: README.md
+  - Inicio: index.md
   - Implementación 90 días: 00-implementacion/guia-90-dias.md
   - Gobierno:
       - Política y charter: 01-gobierno/politica-y-charter-ia-lite.md
@@ -21,9 +24,32 @@ nav:
       - Risk Assessment: templates/ai-risk-assessment.md
       - Model Card Lite: templates/model-card-lite.md
       - Exception Request: templates/exception-request.md
+  - Recursos:
+      - Diagramas: diagramas.md
+      - Datos simulados: datos-simulados.md
+
 theme:
   name: material
+  language: es
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+
+plugins:
+  - search:
+      lang: es
+
 markdown_extensions:
   - tables
   - admonition
-  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
